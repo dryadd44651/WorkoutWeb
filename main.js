@@ -1,7 +1,8 @@
 
 var express = require("express");
 var app = express();
-app.listen(3000,console.log("listening..."));
+var port = Number(process.env.PORT || 3000);
+app.listen(port,console.log("listening..."));
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
