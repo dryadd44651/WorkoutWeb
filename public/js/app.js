@@ -23,8 +23,8 @@ function listPlan(plans,id){
 	for(p in plans){
 		console.log(p);
 		console.log(plans[p]);
-		x +="<tr><td width=50%><label>"+p+" ： </label></td>";
-		x +="<td width=25%><input class=wieght type=number name="+p+"_w value="+plans[p]+"></td>";
+		x +="<tr><td width=45%><label>"+p+" ： </label></td>";
+		x +="<td width=45%><input class=wieght type=number name="+p+"_w value="+plans[p]+"></td>";
 		x +="<td><button  type=button class=item  name="+p+">0</button></td>";
 		x +="<input type=hidden value= 0 id="+p+"  name="+p+"></tr>"
 		//<label for="male">Male</label>
