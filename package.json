@@ -1,21 +1,20 @@
 {
-  "name": "elastic-beanstalk-sample-app",
-  "version": "0.0.1",
-  "private": true,
-  "dependencies": {},
-  "scripts": {
-    "start": "node app.js"
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.7"
   },
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dryadd44651/WorkoutWeb.git"
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dryadd44651/WorkoutWeb/issues"
-  },
-  "homepage": "https://github.com/dryadd44651/WorkoutWeb#readme",
-  "description": ""
+  "license": "ISC"
 }

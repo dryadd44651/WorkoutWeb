@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>ToDo List</title>
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="//rawgit.com/ngryman/jquery.finger/v0.1.2/dist/jquery.finger.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "/js/logIn.js"></script>
+		<script src = "/js/app.js"></script>
+		<script src = "/js/dbm.js"></script>
+    </head>
+	<body>
+		
+		<h1 id="title">Workout Plan
+		<a href="#">
+          <span class="glyphicon glyphicon-log-out btn-lg"></span>
+        </a>	
+		</h1>
+			 
+		
+		
+		<div id="container" class="fontSize">
+			<select id="select" class="fontSize" name="Item"></select>
+			<form action="/finsh" class="fontSize"  method="POST">
+				<input type="hidden" class="fontSize" name = "user" id = "user" value="0" >
+				<table id = "plan" class="fontSize" style="width:100%">
+				
+						
+				</table>
+				<input type="submit"  class="fontSize" id="submit" value="Finish">
+			</form>
+			<div id = timer class="fontSize hide"  value="0">
+			
+			</div>
+		</div>
+		
+		
+		<script>
+			var data;
+			var plans;
+			var nextPlan;
+			logInUpdate();
+			console.log(localStorage.workoutLogInUser);
+			getData(localStorage.workoutLogInUser,function(d){
+				data =d;
+				console.log(data);
+				plans = {
+				powerLiftA:{squat:data[0]["weight"],row:data[1]["weight"],benchPress:data[5]["weight"]},
+				powerLiftB:{deadLift:data[2]["weight"],pullUp:data[4]["weight"],OHpress:data[3]["weight"]}
+				};
+				nextPlan = "powerLiftA";
+				listPlan(plans[nextPlan],"plan");
+				setPlan2Select(plans,"select");	
+			});
+			
+			
+			
+			
+			
+			
+		</script>
+
+
+		<script src = "/js/app.js"></script>
+	</body>
+
+</html>
