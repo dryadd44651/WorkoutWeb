@@ -47,7 +47,7 @@
 				console.log(data);
 				plans = {
 				powerLiftA:{squat:data[0]["weight"],row:data[1]["weight"],benchPress:data[2]["weight"]},
-				powerLiftB:{deadLift:data[3]["weight"],pullUp:data[4]["weight"],OHpress:data[5]["weight"]}
+				powerLiftB:{deadLift:data[3]["weight"],pullUp:data[5]["weight"],OHpress:data[4]["weight"]}
 				};
 				nextPlan = "powerLiftA";
 				listPlan(plans[nextPlan],"plan");
