@@ -4,7 +4,8 @@ body {
  	background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
   	background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
   	background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
-  	background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
+  	backgroud:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
+	  overscroll-behavior: contain;
 }
 
 ul {
@@ -18,7 +19,7 @@ ul {
 
 #timer{
 	text-align: center;
-	
+
 }
 
 .hide {
@@ -41,10 +42,10 @@ h1 {
 }
 
 label{
-	
+
 	font-size: 2.5vh;
-	
-	
+
+
 }
 
 .wieght{
@@ -61,7 +62,7 @@ label{
 	background-color: #888888;
 	height: 3vh;
 	font-size: 2vh;
-	
+
 }
 
 
@@ -81,9 +82,9 @@ input {
 	height: 4vh;
 	color: #000000;
 	background-color: #eeeeee;
-	
+
 	box-sizing: border-box;
-	
+
 }
 input:focus{
 	background: #fff;
@@ -92,12 +93,12 @@ input:focus{
 }
 .wieght{
 	width: 30%;
-	
+
 }
 #select{
-	
+
 	width: 100%;
-	
+
 }
 
 
